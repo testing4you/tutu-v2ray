@@ -1,28 +1,28 @@
+  GNU nano 6.2            /wa                     
 {
   "inbounds": [
     {
-      "port": 80,
-      "protocol": "vmess",
+      "port": 80, // 监听端口
+      "protocol": "http",
       "settings": {
-        "clients": [
+        "timeout:":0,
+        "accounts":[
           {
-            "id": "d1984e7f-a3ea-4441-9e5f-65a1e1430898",
-            "alterId": 0
+            "user":"TuTu",
+            "pass":"Tu!192168"
           }
         ],
-        "disableInsecureEncryption": true
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/"
-        }
+        "allowTransparent":false,
+        "userLevel":0
       }
     }
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
+      "protocol": "freedom",
+      "settings": {}
     }
   ]
 }
+
+
