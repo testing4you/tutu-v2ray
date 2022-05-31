@@ -1,27 +1,28 @@
 {
   "inbounds": [
     {
-      "port": 80, // 监听端口
-      "protocol": "http",
+      "port": 80,
+      "protocol": "vmess",
       "settings": {
-        "timeout:":0,
-        "accounts":[
+        "clients": [
           {
-            "user":"TuTu",
-            "pass":"Tu!192168"
+            "id": "4ebef8c5-9523-4923-abb1-06306958b3c5",
+            "alterId": 0
           }
         ],
-        "allowTransparent":false,
-        "userLevel":0
+        "disableInsecureEncryption": true
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/laoluo"
+        }
       }
     }
   ],
   "outbounds": [
     {
-      "protocol": "freedom",
-      "settings": {}
+      "protocol": "freedom"
     }
   ]
 }
-
-
